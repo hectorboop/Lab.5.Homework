@@ -44,19 +44,7 @@ public class GiftList {
 			return true;
 		}
 	}
-	
-	public GiftBasket deleteFromFront() {
-		if (!isEmpty()) {
-			GiftBasket data = head.getData();
-			Node itemToDelete = head;
-			head = head.getNext();
-			itemToDelete = null;
-			
-			return data;
-		}
-		return null;
-	}
-	
+
 	public void showAllGiftBaskets() {
 		if (isEmpty()) {
 			System.out.println("The list is empty!");
